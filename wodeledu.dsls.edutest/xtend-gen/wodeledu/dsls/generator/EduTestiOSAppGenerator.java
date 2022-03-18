@@ -25,7 +25,6 @@ import org.eclipse.xtext.generator.IGeneratorContext;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 import org.osgi.framework.Bundle;
-import wodeledu.dsls.generator.EduTestSuperGenerator;
 
 @SuppressWarnings("all")
 public class EduTestiOSAppGenerator extends EduTestSuperGenerator {
@@ -75,7 +74,6 @@ public class EduTestiOSAppGenerator extends EduTestSuperGenerator {
         }
       } catch (final Throwable _t) {
         if (_t instanceof ModelNotFoundException) {
-          final ModelNotFoundException e = (ModelNotFoundException)_t;
         } else {
           throw Exceptions.sneakyThrow(_t);
         }

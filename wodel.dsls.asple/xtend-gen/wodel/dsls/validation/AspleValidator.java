@@ -3,8 +3,6 @@
  */
 package wodel.dsls.validation;
 
-import wodel.dsls.validation.AbstractAspleValidator;
-
 /**
  * This class contains custom validation rules.
  * 

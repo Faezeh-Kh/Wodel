@@ -3,8 +3,6 @@
  */
 package wodel.dsls.ide;
 
-import wodel.dsls.ide.AbstractAspleIdeModule;
-
 /**
  * Use this class to register ide components.
  */

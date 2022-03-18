@@ -8,7 +8,6 @@ import com.google.inject.Injector;
 import org.eclipse.xtext.util.Modules2;
 import wodeledu.dsls.MutaTextRuntimeModule;
 import wodeledu.dsls.MutaTextStandaloneSetup;
-import wodeledu.dsls.ide.MutaTextIdeModule;
 
 /**
  * Initialization support for running Xtext languages as language servers.

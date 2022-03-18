@@ -3,8 +3,6 @@
  */
 package wodeledu.dsls;
 
-import wodeledu.dsls.ModelDrawStandaloneSetupGenerated;
-
 /**
  * Initialization support for running Xtext languages without Equinox extension registry.
  */

@@ -9,10 +9,6 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtext.generator.AbstractGenerator;
 import org.eclipse.xtext.generator.IFileSystemAccess2;
 import org.eclipse.xtext.generator.IGeneratorContext;
-import wodeledu.dsls.generator.EduTestAndroidAppGenerator;
-import wodeledu.dsls.generator.EduTestMoodleGenerator;
-import wodeledu.dsls.generator.EduTestWebGenerator;
-import wodeledu.dsls.generator.EduTestiOSAppGenerator;
 
 /**
  * @author Pablo Gomez-Abajo - Main Wodel-Edu code generator.

@@ -1114,7 +1114,7 @@ public class InternalWodelParser extends AbstractInternalAntlrParser {
                     						if (current==null) {
                     							current = createModelElement(grammarAccess.getProgramRule());
                     						}
-                    						setWithLastConsumed(current, "exhaustive", true, "exhaustive");
+                    						setWithLastConsumed(current, "exhaustive", lv_exhaustive_3_0 != null, "exhaustive");
                     					
 
                     }
@@ -6470,7 +6470,7 @@ public class InternalWodelParser extends AbstractInternalAntlrParser {
                     						if (current==null) {
                     							current = createModelElement(grammarAccess.getBooleanLiteralExpCSRule());
                     						}
-                    						setWithLastConsumed(current, "boolSymbol", true, "true");
+                    						setWithLastConsumed(current, "boolSymbol", lv_boolSymbol_1_0 != null, "true");
                     					
 
                     }
@@ -10107,7 +10107,7 @@ public class InternalWodelParser extends AbstractInternalAntlrParser {
                     						if (current==null) {
                     							current = createModelElement(grammarAccess.getReferenceEvaluationRule());
                     						}
-                    						setWithLastConsumed(current, "container", true, "container");
+                    						setWithLastConsumed(current, "container", lv_container_3_0 != null, "container");
                     					
 
                     }
@@ -15220,7 +15220,7 @@ public class InternalWodelParser extends AbstractInternalAntlrParser {
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getCloneObjectMutatorRule());
                     					}
-                    					setWithLastConsumed(current, "contents", true, "deep");
+                    					setWithLastConsumed(current, "contents", lv_contents_2_0 != null, "deep");
                     				
 
                     }

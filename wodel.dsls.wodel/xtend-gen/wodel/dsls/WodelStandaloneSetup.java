@@ -3,8 +3,6 @@
  */
 package wodel.dsls;
 
-import wodel.dsls.WodelStandaloneSetupGenerated;
-
 /**
  * Initialization support for running Xtext languages without Equinox extension registry.
  */

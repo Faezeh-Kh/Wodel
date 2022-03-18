@@ -3,8 +3,6 @@
  */
 package wodeledu.dsls.ide;
 
-import wodeledu.dsls.ide.AbstractModelTextIdeModule;
-
 /**
  * Use this class to register ide components.
  */

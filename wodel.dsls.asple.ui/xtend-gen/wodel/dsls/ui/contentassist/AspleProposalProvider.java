@@ -3,8 +3,6 @@
  */
 package wodel.dsls.ui.contentassist;
 
-import wodel.dsls.ui.contentassist.AbstractAspleProposalProvider;
-
 /**
  * See https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#content-assist
  * on how to customize the content assistant.

@@ -8,7 +8,6 @@ import com.google.inject.Injector;
 import org.eclipse.xtext.util.Modules2;
 import wodeledu.dsls.ModelTextRuntimeModule;
 import wodeledu.dsls.ModelTextStandaloneSetup;
-import wodeledu.dsls.ide.ModelTextIdeModule;
 
 /**
  * Initialization support for running Xtext languages as language servers.

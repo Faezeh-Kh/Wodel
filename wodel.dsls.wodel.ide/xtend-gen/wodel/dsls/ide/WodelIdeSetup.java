@@ -8,7 +8,6 @@ import com.google.inject.Injector;
 import org.eclipse.xtext.util.Modules2;
 import wodel.dsls.WodelRuntimeModule;
 import wodel.dsls.WodelStandaloneSetup;
-import wodel.dsls.ide.WodelIdeModule;
 
 /**
  * Initialization support for running Xtext languages as language servers.

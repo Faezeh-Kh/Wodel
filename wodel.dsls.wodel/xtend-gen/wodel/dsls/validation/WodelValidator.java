@@ -29,7 +29,6 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.xtext.validation.Check;
 import org.eclipse.xtext.xbase.lib.Exceptions;
-import wodel.dsls.validation.AbstractWodelValidator;
 
 /**
  * @author Pablo Gomez-Abajo - Wodel editor validator.
@@ -41,25 +40,25 @@ import wodel.dsls.validation.AbstractWodelValidator;
  */
 @SuppressWarnings("all")
 public class WodelValidator extends AbstractWodelValidator {
-  public final static String INVALID_NAME = "invalidName";
+  public static final String INVALID_NAME = "invalidName";
   
-  public final static String INVALID_METAMODEL = "invalidMetamodel";
+  public static final String INVALID_METAMODEL = "invalidMetamodel";
   
-  public final static String INVALID_MODEL = "invalidModel";
+  public static final String INVALID_MODEL = "invalidModel";
   
-  public final static String INVALID_UNSET = "invalidUnset";
+  public static final String INVALID_UNSET = "invalidUnset";
   
-  public final static String INVALID_SWAP = "invalidSwap";
+  public static final String INVALID_SWAP = "invalidSwap";
   
-  public final static String INVALID_COPY = "invalidCopy";
+  public static final String INVALID_COPY = "invalidCopy";
   
-  public final static String INVALID_TYPE = "invalidType";
+  public static final String INVALID_TYPE = "invalidType";
   
-  public final static String WARNING_MODIFY_SOURCE = "warningModifySource";
+  public static final String WARNING_MODIFY_SOURCE = "warningModifySource";
   
-  public final static String INVALID_EXPRESSION = "invalidExpression";
+  public static final String INVALID_EXPRESSION = "invalidExpression";
   
-  public final static String INVALID_REVERSE = "invalidReverse";
+  public static final String INVALID_REVERSE = "invalidReverse";
   
   private List<EPackage> packages;
   

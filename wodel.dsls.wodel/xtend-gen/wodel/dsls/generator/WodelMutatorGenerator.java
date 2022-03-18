@@ -1261,10 +1261,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                       String _name_50 = ((RandomTypeSelection) _object_47).getType().getName();
                       _builder.append(_name_50, "\t");
                       _builder.append("\", \"");
-                      String _name_51 = c.getAttribute().get(0).getName();
+                      String _name_51 = ((AttributeCopy)c).getAttribute().get(0).getName();
                       _builder.append(_name_51, "\t");
                       _builder.append("\", \"");
-                      String _name_52 = c.getAttribute().get(1).getName();
+                      String _name_52 = ((AttributeCopy)c).getAttribute().get(1).getName();
                       _builder.append(_name_52, "\t");
                       _builder.append("\", objectSelection.getModel()));");
                       _builder.newLineIfNotEmpty();
@@ -1330,10 +1330,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                         String _name_56 = ((SpecificObjectSelection) _object_52).getObjSel().getName();
                         _builder.append(_name_56, "\t\t");
                         _builder.append(".getKey(), \"");
-                        String _name_57 = c.getAttribute().get(0).getName();
+                        String _name_57 = ((AttributeCopy)c).getAttribute().get(0).getName();
                         _builder.append(_name_57, "\t\t");
                         _builder.append("\", \"");
-                        String _name_58 = c.getAttribute().get(1).getName();
+                        String _name_58 = ((AttributeCopy)c).getAttribute().get(1).getName();
                         _builder.append(_name_58, "\t\t");
                         _builder.append("\"));");
                         _builder.newLineIfNotEmpty();
@@ -1386,10 +1386,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                   _builder.newLine();
                   _builder.append("\t");
                   _builder.append("atts.add(new CopyAttributeConfigurationStrategy(objectSelection.getObject(), \"");
-                  String _name_59 = c.getAttribute().get(0).getName();
+                  String _name_59 = ((AttributeCopy)c).getAttribute().get(0).getName();
                   _builder.append(_name_59, "\t");
                   _builder.append("\", \"");
-                  String _name_60 = c.getAttribute().get(1).getName();
+                  String _name_60 = ((AttributeCopy)c).getAttribute().get(1).getName();
                   _builder.append(_name_60, "\t");
                   _builder.append("\"));");
                   _builder.newLineIfNotEmpty();
@@ -3627,10 +3627,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                       String _name_43 = ((RandomTypeSelection) _object_43).getType().getName();
                       _builder.append(_name_43, "\t");
                       _builder.append("\", \"");
-                      String _name_44 = c.getAttribute().get(0).getName();
+                      String _name_44 = ((AttributeCopy)c).getAttribute().get(0).getName();
                       _builder.append(_name_44, "\t");
                       _builder.append("\", \"");
-                      String _name_45 = c.getAttribute().get(1).getName();
+                      String _name_45 = ((AttributeCopy)c).getAttribute().get(1).getName();
                       _builder.append(_name_45, "\t");
                       _builder.append("\", obSelection.getModel()));");
                       _builder.newLineIfNotEmpty();
@@ -3712,10 +3712,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                         _builder.newLine();
                         _builder.append("\t\t");
                         _builder.append("atts.add(new CopyAttributeConfigurationStrategy(obSelection.getObject(), recovered, \"");
-                        String _name_51 = c.getAttribute().get(0).getName();
+                        String _name_51 = ((AttributeCopy)c).getAttribute().get(0).getName();
                         _builder.append(_name_51, "\t\t");
                         _builder.append("\", \"");
-                        String _name_52 = c.getAttribute().get(1).getName();
+                        String _name_52 = ((AttributeCopy)c).getAttribute().get(1).getName();
                         _builder.append(_name_52, "\t\t");
                         _builder.append("\"));");
                         _builder.newLineIfNotEmpty();
@@ -3768,10 +3768,10 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                   _builder.newLine();
                   _builder.append("\t");
                   _builder.append("atts.add(new CopyAttributeConfigurationStrategy(obSelection.getObject(), \"");
-                  String _name_53 = c.getAttribute().get(0).getName();
+                  String _name_53 = ((AttributeCopy)c).getAttribute().get(0).getName();
                   _builder.append(_name_53, "\t");
                   _builder.append("\", \"");
-                  String _name_54 = c.getAttribute().get(1).getName();
+                  String _name_54 = ((AttributeCopy)c).getAttribute().get(1).getName();
                   _builder.append(_name_54, "\t");
                   _builder.append("\"));");
                   _builder.newLineIfNotEmpty();
@@ -23414,7 +23414,7 @@ public class WodelMutatorGenerator extends AbstractGenerator {
           _builder.append("\", objectSelection.getObject()));");
           _builder.newLineIfNotEmpty();
           {
-            if (((e.getExpression() != null) && (this.expressionList != null))) {
+            if (((((OtherTypeSelection)e).getExpression() != null) && (this.expressionList != null))) {
               _builder.append("List<EObject> refObjects");
               _builder.append(this.nReference);
               _builder.append(" = refOts");
@@ -23431,7 +23431,7 @@ public class WodelMutatorGenerator extends AbstractGenerator {
               _builder.append(" = new Expression();");
               _builder.newLineIfNotEmpty();
               _builder.append("\t   \t\t");
-              CharSequence _method_1 = this.method(e.getExpression(), 0);
+              CharSequence _method_1 = this.method(((OtherTypeSelection)e).getExpression(), 0);
               _builder.append(_method_1, "\t   \t\t");
               _builder.newLineIfNotEmpty();
               _builder.append("\t   \t\t");
@@ -23550,7 +23550,7 @@ public class WodelMutatorGenerator extends AbstractGenerator {
               _builder.append(" != null) {");
               _builder.newLineIfNotEmpty();
               {
-                EReference _refType = e.getRefType();
+                EReference _refType = ((SpecificObjectSelection)e).getRefType();
                 boolean _tripleNotEquals = (_refType != null);
                 if (_tripleNotEquals) {
                   _builder.append("refSelection");
@@ -23561,7 +23561,7 @@ public class WodelMutatorGenerator extends AbstractGenerator {
                   _builder.append("_");
                   _builder.append(this.nReference);
                   _builder.append(".getKey(), \"");
-                  String _name_9 = e.getRefType().getName();
+                  String _name_9 = ((SpecificObjectSelection)e).getRefType().getName();
                   _builder.append(_name_9);
                   _builder.append("\");");
                   _builder.newLineIfNotEmpty();
@@ -23633,14 +23633,14 @@ public class WodelMutatorGenerator extends AbstractGenerator {
               _builder.append("}");
               _builder.newLine();
               {
-                EReference _refType_1 = e.getRefType();
+                EReference _refType_1 = ((SpecificObjectSelection)e).getRefType();
                 boolean _tripleNotEquals_1 = (_refType_1 != null);
                 if (_tripleNotEquals_1) {
                   _builder.append("\t");
                   _builder.append("refSelection");
                   _builder.append(this.nReference, "\t");
                   _builder.append(" = new SpecificObjectSelection(packages, model, objs, \"");
-                  String _name_17 = e.getRefType().getName();
+                  String _name_17 = ((SpecificObjectSelection)e).getRefType().getName();
                   _builder.append(_name_17, "\t");
                   _builder.append("\");");
                   _builder.newLineIfNotEmpty();

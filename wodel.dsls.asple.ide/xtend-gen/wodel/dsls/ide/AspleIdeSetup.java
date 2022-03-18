@@ -8,7 +8,6 @@ import com.google.inject.Injector;
 import org.eclipse.xtext.util.Modules2;
 import wodel.dsls.AspleRuntimeModule;
 import wodel.dsls.AspleStandaloneSetup;
-import wodel.dsls.ide.AspleIdeModule;
 
 /**
  * Initialization support for running Xtext languages as language servers.

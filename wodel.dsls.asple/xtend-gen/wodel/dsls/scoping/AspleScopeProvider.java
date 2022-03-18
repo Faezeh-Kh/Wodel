@@ -3,8 +3,6 @@
  */
 package wodel.dsls.scoping;
 
-import wodel.dsls.scoping.AbstractAspleScopeProvider;
-
 /**
  * This class contains custom scoping description.
  * 

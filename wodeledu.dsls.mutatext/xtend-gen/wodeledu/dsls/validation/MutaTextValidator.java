@@ -3,8 +3,6 @@
  */
 package wodeledu.dsls.validation;
 
-import wodeledu.dsls.validation.AbstractMutaTextValidator;
-
 /**
  * This class contains custom validation rules.
  * 

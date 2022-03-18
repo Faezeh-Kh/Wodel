@@ -3,8 +3,6 @@
  */
 package wodeledu.dsls.validation;
 
-import wodeledu.dsls.validation.AbstractModelDrawValidator;
-
 /**
  * This class contains custom validation rules.
  * 
